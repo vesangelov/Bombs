@@ -19,26 +19,42 @@ Constraints
 •	The bomb coordinates will always be in the matrix.
 •	The bomb’s values will always be greater than 0.
 •	The integers of the matrix will be in range [1…10000]. 
+
+
 Examples
-Input	Output	Comments
+
+Input		
 4
 8 3 2 5
 6 4 7 9
 9 9 3 6
 6 8 1 2
-1,2 2,1 2,0	Alive cells: 3
+1,2 2,1 2,0
+
+Output
+Alive cells: 3
 Sum: 12
 8 -4 -5 -2
 -3 -3 0 2
 0 0 -4 -1
--3 -1 -1 2	First the bomb with value 7 will explode and reduce the values of the cells around it. Next the bomb with coordinates 2,1 and value 2 (initially 9-7) will explode and reduce its neighbour cells. In the end the bomb with coordinates 2,0 and value 7 (initially 9-2) will explode. After that you have to print the count of the alive cells, which is 3, and their sum is 12. Print the matrix after the explosions.
+-3 -1 -1 2	
+
+Comments
+First the bomb with value 7 will explode and reduce the values of the cells around it. Next the bomb with coordinates 2,1 and value 2 			(initially 9-7) will explode and reduce its neighbour cells. In the end the bomb with coordinates 2,0 and value 7 (initially 9-2) will 			explode. After that you have to print the count of the alive cells, which is 3, and their sum is 12. Print the matrix after the explosions.
+
+Input 
 3
 7 8 4
 3 1 5
 6 4 9
-0,2 1,0 2,2	Alive cells: 3
+0,2 1,0 2,2	
+
+Output
+Alive cells: 3
 Sum: 8
 4 1 0
 0 -3 -8
 3 -8 0
+	
+
 	
